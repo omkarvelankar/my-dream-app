@@ -1,0 +1,10 @@
+#company:hover{
+    font-style: italic;
+    color: chartreuse;
+}
+
+#myid:hover{
+    background-color: yellow;
+    font-style: italic;
+    
+}
