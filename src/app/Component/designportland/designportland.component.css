@@ -1,8 +1,27 @@
-.mybutton{
-   background-color:rgb(0, 60, 255);
-   border-radius: 30%;
+.toppadd{
+   padding-top: 20px;
 }
 
+.mybutton{
+   background-color:rgb(0, 60, 255);
+   border-radius: 20px;
+   margin-left: 400px;
+}
+
+#background{
+   background-color: white;
+}
 #black{
    color:black;
 }
+
+.wrapper{
+   display: grid;
+   grid-template-columns: 60% 40%;
+}
+
+#imagealg{
+  max-width: 100%;
+  height: auto;
+}
+ 

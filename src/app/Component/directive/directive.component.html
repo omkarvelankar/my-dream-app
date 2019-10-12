@@ -1,0 +1,29 @@
+<p>directive works!</p>
+<h1>*ngIf Directive:</h1>
+<br>
+
+
+<div *ngIf="companyName; else elseBlock">
+technogrowth
+</div>
+
+<ng-template #elseBlock>
+    Logipool
+</ng-template>
+
+<div *ngFor="let c of colors ; index as i">
+    <h2>{{i+1}}{{c}}</h2>
+</div>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You picked red</div>
+    <div *ngSwitchCase="'blue'">You picked blue</div>
+    <div *ngSwitchCase="'green'">You picked green</div>
+    <div *ngSwitchCase="'yellow'"> you picked yellow</div>
+    <div *ngSwitchDefualt>Pick again</div>
+</div>
+
+
+
+
+<router-outlet></router-outlet>
