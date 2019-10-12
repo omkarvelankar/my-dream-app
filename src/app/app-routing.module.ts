@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StructuralComponent } from './Component/structural/structural.component';
 import { StudentformComponent } from './Component/studentform/studentform.component';
 import { DesignportlandComponent } from './Component/designportland/designportland.component';
-
+import { DirectiveComponent } from './Component/directive/directive.component';
 
 const routes: Routes = [
   {
@@ -26,7 +26,12 @@ const routes: Routes = [
   {
     path: 'designportland',
     component: DesignportlandComponent
-  }
+  },
+
+{
+  path: 'directive',
+  component: DirectiveComponent
+}
 ];
 
 @NgModule({

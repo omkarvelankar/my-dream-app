@@ -1,3 +1,8 @@
-.button{
+.mybutton{
    background-color:rgb(0, 60, 255);
+   border-radius: 30%;
+}
+
+#black{
+   color:black;
 }

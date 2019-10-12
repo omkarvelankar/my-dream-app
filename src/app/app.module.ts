@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StructuralComponent } from './Component/structural/structural.component';
 import { StudentformComponent } from './Component/studentform/studentform.component';
 import { DesignportlandComponent } from './Component/designportland/designportland.component';
+import { DirectiveComponent } from './Component/directive/directive.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { DesignportlandComponent } from './Component/designportland/designportla
     StructuralComponent,
     StudentformComponent,
     DesignportlandComponent,
+    DirectiveComponent,
   ],
   imports: [
     BrowserModule,
