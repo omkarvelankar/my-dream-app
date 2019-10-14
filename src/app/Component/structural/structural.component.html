@@ -52,4 +52,12 @@
       </tbody>
     </table>
   </div>
+
+  <h1 [ngStyle]="{'color':'blue'}"> Welcome To Logipool Infotech</h1>
+  <div>
+    <h1>Student Records</h1>
+    <ul *ngFor="let student of students">
+    <li>{{student.rollno}}{{student.name}}{{student.marks}}</li>
+  </ul>
+  </div>
 <router-outlet></router-outlet>

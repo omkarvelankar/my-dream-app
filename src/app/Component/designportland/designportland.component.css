@@ -1,5 +1,5 @@
 .toppadd{
-   padding-top: 20px;
+   padding-top: 30px;
 }
 
 .mybutton{
@@ -23,5 +23,13 @@
 #imagealg{
   max-width: 100%;
   height: auto;
+}
+
+div ul li a {
+   color: black;
+}
+
+div h1{
+   color:blue;
 }
  
