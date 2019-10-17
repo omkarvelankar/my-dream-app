@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class DirectiveComponent implements OnInit {
 
   public companyName = true;
-  public color = 'green';
+  public company = false;
+  public color = 'red';
   public colors = ['red', 'blue', 'green', 'yellow'];
-  constructor() {}
+  constructor() { }
 
 
 
-ngOnInit() {
+  ngOnInit() {
   }
 
 }

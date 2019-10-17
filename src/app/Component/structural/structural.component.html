@@ -13,18 +13,18 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
-        </li>    
+        </li>
       </ul>
-    </div>  
+    </div>
   </nav>
 <div class="jumbotron">
-    <h1>Bootstrap Tutorial</h1> 
-    <p>Bootstrap is the most popular HTML, CSS...</p> 
+    <h1>Bootstrap Tutorial</h1>
+    <p>Bootstrap is the most popular HTML, CSS...</p>
   </div>
 
   <div class="container">
     <h2>Striped Rows</h2>
-    <p>The .table-striped class adds zebra-stripes to a table:</p>            
+    <p>The .table-striped class adds zebra-stripes to a table:</p>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -53,11 +53,63 @@
     </table>
   </div>
 
+
   <h1 [ngStyle]="{'color':'blue'}"> Welcome To Logipool Infotech</h1>
-  <div>
+  <div [ngStyle]="{'color':'blue'}">
     <h1>Student Records</h1>
     <ul *ngFor="let student of students">
-    <li>{{student.rollno}}{{student.name}}{{student.marks}}</li>
+    <li [ngStyle]="{'color':setStudentColor(student.name)}">{{student.rollno}}{{student.name}}{{student.marks}}</li>
   </ul>
   </div>
+
+  <div [ngClass]="{'activeClass':condition,
+'inactiveClass':!condition}">
+    <h1>Welcome to technogrowth</h1>
+  </div>
+
+  <h1 [ngStyle]="{'color':'blue'}">Welcome to Logipool Infotech</h1>
+  <div [ngStyle]="{'color':'blue'}">
+  <h1>student recordds</h1>
+  </div>
+
+
+  <h1>Event binding</h1>
+  <button (click)="OnclickMessage()">show</button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <h1>Template Reference Variable</h1>
+
+    <input #getValue  type="text">
+    <button (click)="getInputValue(getValue.value)">Submit</button>
+  <h1>{{getTemplateValue}}</h1>
+  </div>
+
+  <div>
+    <h1>
+      two way Data Binding:
+    </h1>
+    <p>[]-Property Binding:It binds the data from component to html</p>
+    <p>()-Event Binding : It binds the data from HTML to Component</p>
+    <p>[()] -Two way Data Binding : It binds the data from html file to component and vice versa</p>
+  <input [(ngModel)]="variableName" type="text">
+  <h1>{{variableName}}</h1>
+  </div>
+  <br>
+
+  <div class="formstyle">
+  <form class="centeralign" [formGroup]="userform">
+    <input type="text" name="username" placeholder="enter the name" formControlName="username" #username>
+    <br>
+    <input type="email" name="email" placeholder="enter the email" formControlName="email" #email>
+    <br>
+    <input type="password" name="password" placeholder="enter the password" formControlName="password" #password>
+  <br>
+      <button (click)="submitFunction()">submit</button>
+  </form>
+</div>
+  
+
 <router-outlet></router-outlet>

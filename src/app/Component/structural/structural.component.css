@@ -1,0 +1,26 @@
+
+
+.activeClass{
+    color: blue;
+}
+
+.inactiveClass{
+    color: burlywood;
+}
+
+.focusClass{
+    background-color: azure;
+}
+
+.borderClass{
+    background-color: cyan;
+}
+
+.formstyle{
+
+    background-color: chartreuse;
+}
+
+.centeralign{
+    margin-left:500px;
+}

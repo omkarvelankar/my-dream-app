@@ -4,7 +4,7 @@
 
 
 <div *ngIf="companyName; else elseBlock">
-technogrowth
+    technogrowth
 </div>
 
 <ng-template #elseBlock>
@@ -24,6 +24,52 @@ technogrowth
 </div>
 
 
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">you picked red</div>
+    <div *ngSwitchCase="'blue'">You picked blue</div>
+    <div *ngSwitchDefualt>Pick again</div>
+</div>
+<div *ngFor="let c of colors ">
+    <h2>{{c}}</h2>
+</div>
 
+<div *ngIf="company ; else xyz">
+    techogrowth
+</div>
 
+<ng-template #xyz>
+    Logipool
+</ng-template>
+
+<div *ngIf="company ; else xyz">
+    technogrowth
+</div>
+<ng-template #xyw>
+    Logipool
+</ng-template>
+
+<div *ngIf="company ; else xyz">
+
+</div>
+<ng-template #xyp>
+    
+</ng-template>
+
+<div *ngIf="company ; else xyz">
+
+</div>
+<ng-template #xyx>
+
+</ng-template>
+
+<div *ngFor="let c of colors">
+<h2>{{c}}</h2>
+</div>
+
+<div *ngIf="company ; else bbb">
+
+</div>
+<ng-template bbb>
+    <h2>{{c}}</h2>
+</ng-template>
 <router-outlet></router-outlet>

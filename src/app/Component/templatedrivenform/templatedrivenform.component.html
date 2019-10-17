@@ -1,0 +1,16 @@
+
+<div class="loginbox">
+        
+    <h1>LOGIN</h1>
+    <div>
+        <p>Username</p>
+        <input type="text" [formControl]="username" name="username" [(ngModel)]="userForm" placeholder="Enter Username" required #username>
+        <div *ngIf="username.errors && (username.dirty || username.touched)" >Username is required</div>
+        <p>Password</p>
+        <input type="password" [formControl]="password" name="" placeholder="Enter Password" required #password>
+        <div *ngIf="password.errors.required">Username is required</div>
+        <button (click)="onSubmit()">SUBMIT</button>
+        <a href="#">Lost your password?</a><br>
+        <a href="#">Don't have an account?</a>
+    </div>
+</div>

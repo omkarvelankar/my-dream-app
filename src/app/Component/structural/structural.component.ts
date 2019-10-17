@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{ FormGroup,FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-structural',
@@ -7,14 +8,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StructuralComponent implements OnInit {
 
+
+  
+  condition = false;
+
   students: any;
-  constructor() {
-    this.students = [
-      {rollno: 10, name: 'omkar', marks: 85},
-      {rollno: 10, name: 'suraj', marks: 85},
-      {rollno: 10, name: 'amol', marks: 85},
-      {rollno: 10, name: 'ali', marks: 85},
-      {rollno: 10, name: 'abhay', marks: 85}, ];
+  
+  constructor(private fb:FormBuilder) {
+
+    this.createUserForm();
+  }
+
+  userform:FormGroup;
+  createUserForm(){
+    this.userform=this.fb.group({
+      username : ['',Validators.required],
+      email : ['',Validators.compose([Validators.required,Validators.email])]
+    });
+  }
+
+
+  setStudentColor(studentName){
+    switch(studentName) {
+      case 'omkar': return 'blue';
+      case 'suraj': return 'orange';
+      case 'amol': return 'green';
+      case 'ali': return 'black';
+      case 'abhay': return 'yellow';
+    }
   }
 
 
@@ -22,6 +43,26 @@ export class StructuralComponent implements OnInit {
 ngOnInit() {
   }
 
+
+  OnclickMessage(){
+    console.log("click event is called");
+    alert("hello");
+  }
+
+  getTemplateValue : any;
+  getInputValue(value: any){
+  this.getTemplateValue = value
+  }
+
+  variableName  : any;
+
+  submitFunction(){
+  if(this.userform.valid){
+    alert("User Submited Successfully");
+
+}
+else{
+  alert("All fields are required");
 }
 
-
+}}

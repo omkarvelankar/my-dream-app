@@ -12,4 +12,7 @@ export class AppComponent {
   
   myarray = ['omkar', 'Amar', 'Ankush', 'Aryan'];
 
+
+
+  uarray =['omkar' ,'Amar', 'Ankush' ,'Aryan'];
 }
