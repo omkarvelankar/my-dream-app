@@ -13,6 +13,11 @@ import { TemplatedrivenformComponent } from './Component/templatedrivenform/temp
 import { EployeelistComponent } from './Component/employees/eployeelist/eployeelist.component';
 import { EmployeetableComponent } from './Component/employees/employeetable/employeetable.component';
 import { EmployeeService } from './Services/employee.service';
+import { NavbarComponent } from './Component/navbar/navbar.component';
+import { DepartmentsComponent } from './Component/students/departments/departments.component';
+import { StudentsComponent } from './Component/students/students/students.component';
+import { PagenotfoundComponent } from './Component/pagenotfound/pagenotfound.component';
+import { DepartmentsDetailsComponent } from './Component/students/departments-details/departments-details.component';
 
 
 @NgModule({
@@ -26,6 +31,11 @@ import { EmployeeService } from './Services/employee.service';
     TemplatedrivenformComponent,
     EployeelistComponent,
     EmployeetableComponent,
+    NavbarComponent,
+    DepartmentsComponent,
+    StudentsComponent,
+    PagenotfoundComponent,
+    DepartmentsDetailsComponent,
 
   ],
   imports: [

@@ -1,0 +1,7 @@
+<p>departments works!</p>
+<div class="container-fluid">
+    <h1>Departments List</h1>
+    <ul *ngFor="let dept of departments" [class.selected]="" class='items'>
+        <li (click)="onSelect(dept)" [class.selected]="isSelected(dept)"><span class="badge">{{dept.id}}</span> {{dept.name}}</li>
+    </ul>
+</div>
