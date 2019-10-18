@@ -10,7 +10,7 @@ body{
 .loginbox{
     width: 320px;
     height: 420px;
-    background: linear-gradient(green,rgb(17, 241, 17));
+    background: linear-gradient(red,purple);
     color: #fff;
     top: 50%;
     left: 50%;
